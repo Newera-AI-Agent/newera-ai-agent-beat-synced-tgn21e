@@ -24,3 +24,10 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-10-11T12:13:04.582Z | VM 1/3] CONTRACT REQ-018 -> complete: work/vm-report.md written with: exact ffprobe output for master MP4, tempo (130.1 BPM), onset count (3819), section count (12), alignment table (12 boundaries with nearest onset frame, delta, PASS/FAI
 - [2026-10-11T12:14:57.926Z | VM 1/3] PLAN updated: 9 steps
 - [2026-10-11T12:33:29.863Z | VM 1/3] RELAY checkpoint at step 76 — handoff committed, VM 2 continues.
+- [2026-10-11T12:33:44.388Z | VM 2/3] boot: VM 2/3 online (job vm-mv3t0w6b-888w179o, 60 min budget, relay continuation)
+- [2026-10-11T12:33:44.388Z | VM 2/3] self-check PASS: shell: VERIFIED (the harness executed bash on this VM at boot); node: v24.21.0; npm: 11.19.0; python3: Python 3.12.3; git: repo checked out @ e9b42f9; filesystem: WRITABLE (the harness wrote + read back a probe file); skills: 22 knowledge docs in .newera/skills/ (list_skills / read_skill); project: 
+- [2026-10-11T12:39:30.487Z | VM 2/3] CONTRACT REQ-002 -> complete: Job summary: Downloaded BGM 'Life Force' from mirror https://files.catbox.moe/8wi7fw.mp3 to audio/bgm.mp3 (1774296 bytes, 109.44s). Analyzed audio: 85.7 BPM, 156 beats, 428 onsets, 15 sections, 3283 f
+- [2026-10-11T12:39:36.796Z | VM 2/3] CONTRACT REQ-003 -> complete: Downloaded BGM 'Life Force' from mirror https://files.catbox.moe/8wi7fw.mp3 to audio/bgm.mp3 (1774296 bytes, duration 109.44s verified by ffprobe). First mirror succeeded.
+- [2026-10-11T12:39:46.716Z | VM 2/3] CONTRACT REQ-005 -> complete: First mirror (catbox.moe) succeeded; second mirror (tmpfiles.org) not needed. No failure to report. BGM downloaded successfully on first attempt.
+- [2026-10-11T12:40:02.183Z | VM 2/3] CONTRACT REQ-011 -> complete: Generated poster frame: media/poster.jpg (1920x1080, 21588 bytes, extracted at 00:00:58 from video, verified by ffprobe). Generated contact sheet: media/contact-sheet.jpg (1920x1728, 72087 bytes, 40 s
+- [2026-10-11T13:12:49.095Z | VM 2/3] RELAY checkpoint at step 68 — handoff committed, VM 3 continues.

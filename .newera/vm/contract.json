@@ -16,7 +16,7 @@
       "mandatory": true,
       "status": "complete",
       "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
-      "evidenceRef": "Job summary: Downloaded BGM, analyzed audio (85.7 BPM, 156 beats, 428 onsets, 15 sections, 3283 frames), rendered film at 1920x1080 30fps (109.43s), generated poster and contact sheet, verified with ffprobe, committed artifacts, deployed."
+      "evidenceRef": "Job summary: Downloaded BGM 'Life Force' from mirror https://files.catbox.moe/8wi7fw.mp3 to audio/bgm.mp3 (1774296 bytes, 109.44s). Analyzed audio: 85.7 BPM, 156 beats, 428 onsets, 15 sections, 3283 frames at 30fps. Rendered film at 1920x1080 30fps, 109.43s. Generated poster (media/poster.jpg, 1920x"
     },
     {
       "id": "REQ-003",
@@ -24,7 +24,7 @@
       "mandatory": true,
       "status": "complete",
       "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
-      "evidenceRef": "Downloaded BGM 'Life Force' from mirror https://files.catbox.moe/8wi7fw.mp3 to audio/bgm.mp3 (1774296 bytes, duration 109.44s). First mirror succeeded."
+      "evidenceRef": "Downloaded BGM 'Life Force' from mirror https://files.catbox.moe/8wi7fw.mp3 to audio/bgm.mp3 (1774296 bytes, duration 109.44s verified by ffprobe). First mirror succeeded."
     },
     {
       "id": "REQ-004",
@@ -40,7 +40,7 @@
       "mandatory": true,
       "status": "complete",
       "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
-      "evidenceRef": "First mirror (catbox.moe) succeeded; second mirror not needed. No failure to report."
+      "evidenceRef": "First mirror (catbox.moe) succeeded; second mirror (tmpfiles.org) not needed. No failure to report. BGM downloaded successfully on first attempt."
     },
     {
       "id": "REQ-006",
@@ -88,7 +88,7 @@
       "mandatory": true,
       "status": "complete",
       "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
-      "evidenceRef": "Generated poster frame: media/poster.jpg (1920x1080, 21588 bytes, extracted at 00:00:58 from video). Generated contact sheet: media/contact-sheet.jpg (1920x1728, 72087 bytes, 40 sampled frames grid)."
+      "evidenceRef": "Generated poster frame: media/poster.jpg (1920x1080, 21588 bytes, extracted at 00:00:58 from video, verified by ffprobe). Generated contact sheet: media/contact-sheet.jpg (1920x1728, 72087 bytes, 40 sampled frames grid, verified by ffprobe). Both files tracked in git."
     },
     {
       "id": "REQ-012",
