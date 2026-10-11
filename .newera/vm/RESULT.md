@@ -1,3 +1,3 @@
 # VM Agent Result
 
-RELAYED to a fresh VM (relay 2 of 2) after 68 steps. All work is committed; the handoff brief is .newera/vm/handoff.md.
+TIME LIMIT REACHED after 86 steps. All work so far is committed to the repo and packaged in the artifact; the handoff at .newera/vm/handoff.md carries the continuation plan.

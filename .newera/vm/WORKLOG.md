@@ -33,3 +33,4 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-10-11T13:12:49.095Z | VM 2/3] RELAY checkpoint at step 68 — handoff committed, VM 3 continues.
 - [2026-10-11T13:13:07.206Z | VM 3/3] boot: VM 3/3 online (job vm-mv3ufglb-5b1y3tiu, 60 min budget, relay continuation)
 - [2026-10-11T13:13:07.207Z | VM 3/3] self-check PASS: shell: VERIFIED (the harness executed bash on this VM at boot); node: v24.21.0; npm: 11.19.0; python3: Python 3.12.3; git: repo checked out @ 655b954; filesystem: WRITABLE (the harness wrote + read back a probe file); skills: 22 knowledge docs in .newera/skills/ (list_skills / read_skill); project: 
+- [2026-10-11T14:10:00.082Z | VM 3/3] DEADLINE reached at step 86 — handoff written for the next VM or an explicit resume.
