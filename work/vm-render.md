@@ -40,6 +40,30 @@ python3 -c "import numpy, PIL; print('numpy', numpy.__version__, 'pillow', PIL._
 
 
 
+## Acquire the audio first (mandatory)
+
+The 1.7 MB MP3 cannot live in the repo (platform hard limit ~500 KB per file),
+so the clone will NOT contain a usable `audio/bgm.mp3`. Run this before anything
+else; it tries both mirrors, validates with ffprobe, and exits non-zero if both
+fail:
+
+```bash
+chmod +x tools/fetch_bgm.sh
+tools/fetch_bgm.sh audio/bgm.mp3
+ls -l audio/bgm.mp3
+ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 audio/bgm.mp3
+```
+
+Mirrors, in order of preference:
+
+1. `https://files.catbox.moe/8wi7fw.mp3`
+2. `https://tmpfiles.org/dl/wFAk6KtKsGFz/ptasinskirjpasin-lifeforce.mp3`
+
+Track: *Life Force* (ptasinski / RJ Pasin). If **both** mirrors fail, do NOT
+substitute a synthesized score and do NOT invent a duration — stop, report the
+fetch failure in `analysis/AUDIO.md`, and commit that report so the failure is
+visible.
+
 ## Steps
 
 1. **Measure the audio.**
