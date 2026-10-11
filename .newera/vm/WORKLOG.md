@@ -31,3 +31,5 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-10-11T12:39:46.716Z | VM 2/3] CONTRACT REQ-005 -> complete: First mirror (catbox.moe) succeeded; second mirror (tmpfiles.org) not needed. No failure to report. BGM downloaded successfully on first attempt.
 - [2026-10-11T12:40:02.183Z | VM 2/3] CONTRACT REQ-011 -> complete: Generated poster frame: media/poster.jpg (1920x1080, 21588 bytes, extracted at 00:00:58 from video, verified by ffprobe). Generated contact sheet: media/contact-sheet.jpg (1920x1728, 72087 bytes, 40 s
 - [2026-10-11T13:12:49.095Z | VM 2/3] RELAY checkpoint at step 68 — handoff committed, VM 3 continues.
+- [2026-10-11T13:13:07.206Z | VM 3/3] boot: VM 3/3 online (job vm-mv3ufglb-5b1y3tiu, 60 min budget, relay continuation)
+- [2026-10-11T13:13:07.207Z | VM 3/3] self-check PASS: shell: VERIFIED (the harness executed bash on this VM at boot); node: v24.21.0; npm: 11.19.0; python3: Python 3.12.3; git: repo checked out @ 655b954; filesystem: WRITABLE (the harness wrote + read back a probe file); skills: 22 knowledge docs in .newera/skills/ (list_skills / read_skill); project: 
