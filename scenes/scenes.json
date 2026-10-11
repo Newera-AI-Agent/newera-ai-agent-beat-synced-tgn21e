@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "title": "NewEra AI Agent",
+    "subtitle": "AI AGENT IDE",
+    "domain": "newera.namansoni.in",
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "targetDurationSec": 125,
+    "accentFrameBudget": 0.08
+  },
+  "palette": {
+    "ink": "#08090C",
+    "paper": "#F4F5F7",
+    "muted": "#6B7280",
+    "accent": "#4D7CFE",
+    "accent2": "#A9C1FF"
+  },
+  "type": {
+    "display": "display-bold",
+    "body": "body-medium",
+    "mono": "mono-medium"
+  },
+  "motion": {
+    "easeEnter": "outExpo",
+    "easeMove": "inOutCubic",
+    "slamFrames": 10,
+    "revealFrames": 26,
+    "maxOvershoot": 0.04,
+    "maxCrossfadeFrames": 6
+  },
+  "scenes": [
+    {
+      "id": "cold-open",
+      "label": "Cold open",
+      "start": 0.0,
+      "end": 0.09,
+      "energy": "calm",
+      "cut": "fade",
+      "bg": "ink",
+      "elements": [
+        {"kind": "hairline", "at": 0.08, "y": 0.5, "draw": 14, "width": 0.62},
+        {"kind": "text", "at": 0.20, "text": "EVERY ERA HAS A TOOL.", "style": "display", "size": 0.072, "y": 0.44, "enter": "maskUp", "enterFrames": 24, "exit": "maskDown"},
+        {"kind": "text", "at": 0.62, "text": "THEN IT HAS A PARTNER.", "style": "display", "size": 0.072, "y": 0.56, "enter": "maskUp", "enterFrames": 24, "exit": "cut"}
+      ]
+    },
+    {
+      "id": "friction",
+      "label": "The friction",
+      "start": 0.09,
+      "end": 0.22,
+      "energy": "build",
+      "cut": "hard",
+      "bg": "ink",
+      "beatLock": true,
+      "slamWords": ["TABS", "CONTEXT", "COPY PASTE", "WAITING", "ALT-TAB", "RETRY", "SCROLL", "REPROMPT"],
+      "elements": [
+        {"kind": "dots", "at": 0.0, "cols": 12, "rows": 7, "jitter": 0.018, "opacity": 0.16, "pulse": "flux"},
+        {"kind": "slam", "at": 0.04, "style": "display", "size": 0.125, "y": 0.5, "accentIndex": 5},
+        {"kind": "text", "at": 0.90, "text": "THE WORK IS THE WORK. THE TOOLING IS NOT.", "style": "body", "size": 0.030, "y": 0.79, "enter": "fade", "enterFrames": 12, "exit": "cut", "color": "muted"}
+      ]
+    },
+    {
+      "id": "turn",
+      "label": "The turn",
+      "start": 0.22,
+      "end": 0.34,
+      "energy": "build",
+      "cut": "hard",
+      "bg": "ink",
+      "elements": [
+        {"kind": "gridAssemble", "at": 0.0, "cols": 9, "rows": 5, "spread": 0.55, "enterFrames": 30, "accentLine": 2},
+        {"kind": "ring", "at": 0.46, "cx": 0.5, "cy": 0.5, "maxR": 0.42, "band": "bass", "stroke": 0.0015},
+        {"kind": "text", "at": 0.54, "text": "WHAT IF THE MACHINE\nUNDERSTOOD INTENT?", "style": "display", "size": 0.060, "y": 0.5, "enter": "maskUp", "enterFrames": 22, "exit": "fade", "lines": 2}
+      ]
+    },
+    {
+      "id": "wordmark",
+      "label": "Wordmark build",
+      "start": 0.34,
+      "end": 0.50,
+      "energy": "peak",
+      "cut": "hard",
+      "bg": "ink",
+      "beatLock": true,
+      "elements": [
+        {"kind": "riser", "at": 0.0, "to": 0.52},
+        {"kind": "wordmark", "at": 0.52, "word": "NEWERA", "size": 0.195, "y": 0.47, "perLetter": 5, "accentSweep": true},
+        {"kind": "text", "at": 0.78, "text": "AI AGENT IDE", "style": "mono", "size": 0.026, "y": 0.66, "tracking": 0.34, "enter": "fade", "enterFrames": 10, "color": "accent"},
+        {"kind": "cursor", "at": 0.86, "x": 0.63, "y": 0.66, "blinkOnBeat": true}
+      ]
+    },
+    {
+      "id": "capability",
+      "label": "Capability run",
+      "start": 0.50,
+      "end": 0.74,
+      "energy": "drive",
+      "cut": "hard",
+      "bg": "ink",
+      "beatLock": true,
+      "cards": [
+        {"title": "PLAN", "line": "Decomposes the request into a real plan.", "icon": "plan"},
+        {"title": "BUILD", "line": "Writes the whole vertical slice.", "icon": "build"},
+        {"title": "VERIFY", "line": "Compiles, tests, reads the real errors.", "icon": "verify"},
+        {"title": "DEPLOY", "line": "Ships it and proves the URL is live.", "icon": "deploy"}
+      ],
+      "elements": [
+        {"kind": "cards", "at": 0.02, "perCard": 0.24, "size": 0.055, "iconStroke": 0.003, "accentCard": 3},
+        {"kind": "hairline", "at": 0.02, "y": 0.30, "draw": 18, "width": 0.86, "color": "muted"}
+      ]
+    },
+    {
+      "id": "proof",
+      "label": "Proof",
+      "start": 0.74,
+      "end": 0.86,
+      "energy": "steady",
+      "cut": "hard",
+      "bg": "ink",
+      "counters": [
+        {"label": "REPOS SHIPPED", "to": 128, "suffix": ""},
+        {"label": "TESTS RUN", "to": 9400, "suffix": ""},
+        {"label": "TIME TO LIVE", "to": 4, "suffix": " MIN"}
+      ],
+      "elements": [
+        {"kind": "counters", "at": 0.06, "size": 0.085, "tickSound": true},
+        {"kind": "text", "at": 0.62, "text": "ONE PROMPT. ONE REPO. ONE URL.", "style": "display", "size": 0.058, "y": 0.72, "enter": "maskUp", "enterFrames": 18, "exit": "cut"}
+      ]
+    },
+    {
+      "id": "outro",
+      "label": "Outro",
+      "start": 0.86,
+      "end": 1.0,
+      "energy": "resolve",
+      "cut": "fade",
+      "bg": "ink",
+      "elements": [
+        {"kind": "wordmark", "at": 0.10, "word": "NEWERA", "size": 0.135, "y": 0.44, "perLetter": 0, "accentSweep": false},
+        {"kind": "text", "at": 0.34, "text": "AI AGENT IDE", "style": "mono", "size": 0.024, "y": 0.56, "tracking": 0.34, "enter": "fade", "enterFrames": 12, "color": "muted"},
+        {"kind": "text", "at": 0.56, "text": "newera.namansoni.in", "style": "body", "size": 0.030, "y": 0.66, "enter": "fade", "enterFrames": 14},
+        {"kind": "dot", "at": 0.80, "cx": 0.5, "cy": 0.80, "r": 0.006, "band": "sub"},
+        {"kind": "fadeOut", "at": 0.93, "frames": 16}
+      ]
+    }
+  ]
+}

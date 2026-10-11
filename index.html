@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NewEra AI Agent — Intro Film</title>
+<meta name="description" content="A beat-synced minimalist intro film for NewEra AI Agent, cut to Life Force by ptasinski and RJ Pasin." />
+<style>
+  :root {
+    --ink: #08090C;
+    --paper: #F4F5F7;
+    --muted: #8A909B;
+    --accent: #4D7CFE;
+    --line: #1C1F26;
+    --maxw: 1180px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--ink);
+    color: var(--paper);
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.55;
+  }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+  header {
+    border-bottom: 1px solid var(--line);
+    padding: 22px 0;
+  }
+  .brand {
+    display: flex; align-items: center; gap: 12px;
+    font-weight: 700; letter-spacing: -0.02em; font-size: 17px;
+  }
+  .brand .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--accent); display: inline-block;
+  }
+  .brand small {
+    color: var(--muted); font-weight: 500; letter-spacing: 0.18em;
+    text-transform: uppercase; font-size: 10px;
+  }
+  .hero { padding: 72px 0 40px; }
+  h1 {
+    font-size: clamp(34px, 6vw, 62px);
+    line-height: 1.02; margin: 0 0 18px;
+    letter-spacing: -0.035em; font-weight: 800;
+  }
+  .lede {
+    color: var(--muted); font-size: clamp(15px, 2vw, 19px);
+    max-width: 62ch; margin: 0;
+  }
+  .meta-row {
+    display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px;
+  }
+  .chip {
+    border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 13px; font-size: 12px; color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .chip b { color: var(--paper); font-weight: 600; }
+  .stage { padding: 34px 0 10px; }
+  .player {
+    position: relative; width: 100%; aspect-ratio: 16 / 9;
+    background: #000; border: 1px solid var(--line); border-radius: 10px;
+    overflow: hidden;
+  }
+  .player video { width: 100%; height: 100%; display: block; background: #000; }
+  .placeholder {
+    position: absolute; inset: 0; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 10px;
+    text-align: center; padding: 24px; background: var(--ink);
+  }
+  .placeholder strong { font-size: 15px; font-weight: 600; }
+  .placeholder span { color: var(--muted); font-size: 13px; max-width: 46ch; }
+  .placeholder code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 12px; color: var(--accent);
+  }
+  .controls { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+  a.btn {
+    display: inline-block; border: 1px solid var(--line); color: var(--paper);
+    text-decoration: none; padding: 10px 16px; border-radius: 8px;
+    font-size: 13px; font-weight: 500; transition: border-color .18s ease, color .18s ease;
+  }
+  a.btn:hover { border-color: var(--accent); color: var(--accent); }
+  a.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  a.btn.primary:hover { opacity: .88; color: #fff; }
+  section { padding: 54px 0; border-top: 1px solid var(--line); }
+  h2 {
+    font-size: 13px; text-transform: uppercase; letter-spacing: 0.2em;
+    color: var(--muted); font-weight: 600; margin: 0 0 22px;
+  }
+  .grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  .card {
+    border: 1px solid var(--line); border-radius: 10px; padding: 20px;
+  }
+  .card h3 { margin: 0 0 8px; font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase; }
+  .card p { margin: 0; color: var(--muted); font-size: 14px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 11px 12px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; }
+  td.num { font-variant-numeric: tabular-nums; text-align: right; }
+  .note { color: var(--muted); font-size: 13px; margin-top: 14px; }
+  footer { border-top: 1px solid var(--line); padding: 30px 0 60px; color: var(--muted); font-size: 13px; }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap brand">
+    <span class="dot" aria-hidden="true"></span>
+    NEWERA <small>AI Agent IDE</small>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <h1>Every era has a tool.<br />Then it has a partner.</h1>
+    <p class="lede">
+      A beat-synced motion-graphics intro film for NewEra AI Agent, cut frame-accurately
+      to <em>Life Force</em> by ptasinski and RJ Pasin. Every cut is triggered by a measured
+      onset in the track, not by a round number.
+    </p>
+    <div class="meta-row" id="chips">
+      <span class="chip">Duration <b id="chip-duration">—</b></span>
+      <span class="chip">Tempo <b id="chip-tempo">—</b></span>
+      <span class="chip">Cuts <b id="chip-cuts">—</b></span>
+      <span class="chip">Format <b>1080p / 30 fps</b></span>
+    </div>
+  </div>
+
+  <div class="wrap stage">
+    <div class="player">
+      <video id="film" controls preload="metadata" playsinline poster="media/poster.jpg">
+        <source src="media/newera-intro.webm" type="video/webm" />
+        <source src="media/newera-intro.mp4" type="video/mp4" />
+        Your browser does not support embedded video.
+      </video>
+      <div class="placeholder" id="placeholder" hidden>
+        <strong>The master is still rendering.</strong>
+        <span>
+          The film is produced on a Linux render VM from the measured beat grid.
+          Once the render finishes, <code>media/newera-intro.mp4</code> is committed
+          and this page plays it.
+        </span>
+      </div>
+    </div>
+    <div class="controls">
+      <a class="btn primary" id="dl-mp4" href="media/newera-intro.mp4" download>Download MP4</a>
+      <a class="btn" id="dl-webm" href="media/newera-intro.webm" download>Download WebM</a>
+      <a class="btn" href="analysis/AUDIO.md">Audio analysis</a>
+      <a class="btn" href="media/contact-sheet.jpg">Contact sheet</a>
+    </div>
+  </div>
+
+  <section class="wrap">
+    <h2>The film, section by section</h2>
+    <div class="grid" id="sections"></div>
+    <p class="note">
+      Section boundaries are proportional anchors; the exact cut frame inside each
+      boundary comes from the measured onset list in <code>analysis/beat_map.json</code>.
+    </p>
+  </section>
+
+  <section class="wrap">
+    <h2>Measured audio</h2>
+    <table>
+      <thead>
+        <tr><th>Property</th><th>Value</th></tr>
+      </thead>
+      <tbody id="audio-table">
+        <tr><td>Analysis pending</td><td class="num">—</td></tr>
+      </tbody>
+    </table>
+    <p class="note">
+      Produced by <code>tools/analyze_audio.py</code> on the render VM. The same file the
+      renderer reads, so the film cannot drift out of sync with the music.
+    </p>
+  </section>
+
+  <section class="wrap">
+    <h2>Build</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Measured</h3>
+        <p>Decode, STFT, onset detection, tempo autocorrelation and structural segmentation produce a per-frame energy map.</p>
+      </div>
+      <div class="card">
+        <h3>Authored</h3>
+        <p><code>scenes/scenes.json</code> holds seven proportional sections. No timing is hardcoded in the renderer.</p>
+      </div>
+      <div class="card">
+        <h3>Rendered</h3>
+        <p>Deterministic PIL frames at 1920x1080, encoded to H.264 plus a VP9 web fallback, with synthesised sound design mixed under the track.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    NewEra AI Agent — intro film. Rendered from the measured beat grid of the supplied soundtrack.
+  </div>
+</footer>
+
+<script>
+(function () {
+  var SECTIONS = [
+    ['Cold open', 0, 9, 'A hairline draws. Two lines of type set the premise.'],
+    ['The friction', 9, 22, 'Beat-slammed words for everything the tooling gets in the way of.'],
+    ['The turn', 22, 34, 'A dot matrix assembles into a grid. The accent colour enters.'],
+    ['Wordmark', 34, 50, 'N-E-W-E-R-A builds letter by letter on the hits.'],
+    ['Capability run', 50, 74, 'Four beat-locked cards: plan, build, verify, deploy.'],
+    ['Proof', 74, 86, 'Counters tick. One prompt, one repo, one URL.'],
+    ['Outro', 86, 100, 'Lockup, domain, and an accent dot on the final downbeat.'],
+  ];
+
+  function el(id) { return document.getElementById(id); }
+
+  function buildSections() {
+    var host = el('sections');
+    if (!host) return;
+    var html = '';
+    for (var i = 0; i < SECTIONS.length; i++) {
+      var s = SECTIONS[i];
+      html += '<div class="card"><h3>' + (i + 1) + '. ' + s[0] + '</h3>';
+      html += '<p>' + s[3] + '</p>';
+      html += '<p class="note">' + s[1] + '% to ' + s[2] + '% of the timeline</p></div>';
+    }
+    host.innerHTML = html;
+  }
+
+  function fmtDuration(sec) {
+    var m = Math.floor(sec / 60);
+    var s = Math.round(sec - m * 60);
+    if (s < 10) s = '0' + s;
+    return m + ':' + s;
+  }
+
+  function fillTable(map) {
+    var rows = [
+      ['Duration', fmtDuration(map.durationSec)],
+      ['Tempo', map.tempoBpm ? map.tempoBpm.toFixed(1) + ' BPM' : 'not detected'],
+      ['Film frames', String(map.totalFrames)],
+      ['Beats detected', String((map.beatFrames || []).length)],
+      ['Onsets detected', String((map.onsetFrames || []).length)],
+      ['Structural sections', String((map.sections || []).length)],
+      ['Sample rate', String(map.sampleRate) + ' Hz'],
+    ];
+    var html = '';
+    for (var i = 0; i < rows.length; i++) {
+      html += '<tr><td>' + rows[i][0] + '</td><td class="num">' + rows[i][1] + '</td></tr>';
+    }
+    el('audio-table').innerHTML = html;
+    el('chip-duration').textContent = fmtDuration(map.durationSec);
+    el('chip-tempo').textContent = map.tempoBpm ? map.tempoBpm.toFixed(1) + ' BPM' : '—';
+    el('chip-cuts').textContent = String((map.onsetFrames || []).length);
+  }
+
+  function showPlaceholder() {
+    var ph = el('placeholder');
+    if (ph) ph.hidden = false;
+    var v = el('film');
+    if (v) v.style.display = 'none';
+  }
+
+  function checkMedia() {
+    var v = el('film');
+    if (!v) return;
+    var sources = v.querySelectorAll('source');
+    if (!sources.length) { showPlaceholder(); return; }
+    var last = sources[sources.length - 1];
+    var probe = new Image();
+    probe.onerror = function () { showPlaceholder(); };
+    probe.onload = function () { };
+    probe.src = 'media/poster.jpg';
+    v.addEventListener('error', showPlaceholder, true);
+    v.load();
+  }
+
+  function loadAnalysis() {
+    if (!window.fetch) return;
+    fetch('analysis/beat_map.json')
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (map) {
+        if (!map) return;
+        var light = {
+          durationSec: map.durationSec,
+          tempoBpm: map.tempoBpm,
+          totalFrames: map.totalFrames,
+          sampleRate: map.sampleRate,
+          beatFrames: map.beatFrames || [],
+          onsetFrames: map.onsetFrames || [],
+          sections: map.sections || [],
+        };
+        fillTable(light);
+      })
+      .catch(function () { });
+  }
+
+  buildSections();
+  checkMedia();
+  loadAnalysis();
+})();
+</script>
+</body>
+</html>

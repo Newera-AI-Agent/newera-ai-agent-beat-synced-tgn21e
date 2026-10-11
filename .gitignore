@@ -1,0 +1,29 @@
+# ---- render / build intermediates ----
+node_modules/
+dist/
+build/
+out/
+frames/
+renders/
+*.log
+
+# keep only the finished film under media/
+media/*.tmp
+media/*.part
+
+# reference clip is downloaded on demand, never committed
+analysis/ref/
+
+# decoded audio + analysis scratch
+audio/*.wav
+audio/*.raw
+analysis/tmp/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# os
+.DS_Store
+Thumbs.db
